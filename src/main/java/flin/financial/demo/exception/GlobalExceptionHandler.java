@@ -1,4 +1,4 @@
-package exception;
+package flin.financial.demo.exception;
 
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.security.SignatureException;
