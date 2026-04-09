@@ -1,0 +1,579 @@
+{
+  "info": {
+    "_postman_id": "7bf343af-a016-470e-8c21-66384ec4719c",
+    "name": "flin",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "7120649"
+  },
+  "item": [
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\" : \"vincent@gmail.com\",\n    \"password\" : \"vincent12345\",\n    \"fullName\" : \"Vincent Sinatra\"\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/auth/signup",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "auth",
+            "signup"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Register",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"username\" : \"vincent@gmail.com\",\n    \"password\" : \"vincent12345\",\n    \"fullName\" : \"Vincent Sinatra\"\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/auth/signup",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "auth",
+                "signup"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "0"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "key": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "Expires",
+              "value": "0"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 09 Apr 2026 11:08:33 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"username\": \"vincent@gmail.com\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\" : \"vincent@gmail.com\",\n    \"password\" : \"vincent12345\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/auth/login",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Login",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"username\" : \"vincent@gmail.com\",\n    \"password\" : \"vincent12345\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/auth/login",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "0"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "key": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "Expires",
+              "value": "0"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 09 Apr 2026 11:09:27 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"username\": \"vincent@gmail.com\",\n    \"jwt\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2aW5jZW50QGdtYWlsLmNvbSIsImlhdCI6MTc3NTczMjk2NywiZXhwIjoxNzc1NzM2NTY3fQ.BERBf1oMy0PFUANcbjTQR0rUnUa3BEyOfJ_tb9p94As\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "profile",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2aW5jZW50QGdtYWlsLmNvbSIsImlhdCI6MTc3NTczNjYxMSwiZXhwIjoxNzc1NzQwMjExfQ.XGakRl--6WzrBX8i8PHZABY8E9XPyQsN2Gp0YUEMmAI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"fullName\": \"Vincent Sinatra\",\n  \"monthlyIncome\": 15000000,\n  \"monthlyExpenses\": 7000000,\n  \"totalDebt\": 20000000,\n  \"totalSaving\": 50000000\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/profile",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "profile"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "profile",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fullName\": \"Vincent Sinatra\",\n  \"monthlyIncome\": 15000000,\n  \"monthlyExpenses\": 7000000,\n  \"totalDebt\": 20000000,\n  \"totalSaving\": 50000000\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/profile",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "profile"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "0"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "key": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "Expires",
+              "value": "0"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 09 Apr 2026 12:10:26 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"fullName\": \"Vincent Sinatra\",\n    \"monthlyIncome\": 15000000,\n    \"monthlyExpenses\": 7000000,\n    \"totalDebt\": 20000000,\n    \"totalSaving\": 50000000,\n    \"financialHealthScore\": 100\n}"
+        }
+      ]
+    },
+    {
+      "name": "profile me",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2aW5jZW50QGdtYWlsLmNvbSIsImlhdCI6MTc3NTczNjYxMSwiZXhwIjoxNzc1NzQwMjExfQ.XGakRl--6WzrBX8i8PHZABY8E9XPyQsN2Gp0YUEMmAI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/profile/me",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "profile",
+            "me"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "profile me",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/profile/me",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "profile",
+                "me"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "0"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "key": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "Expires",
+              "value": "0"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 09 Apr 2026 12:12:25 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": \"d9959057-ed37-42a3-82e1-b06afac7b350\",\n    \"username\": \"vincent@gmail.com\",\n    \"password\": \"$2a$10$js8uvZrINUhe0FqEIYudGu1gpbr0eJfL3I3u.0nsPfvk5sNBkC7b2\",\n    \"fullName\": \"Vincent Sinatra\",\n    \"monthlyIncome\": 15000000,\n    \"monthlyExpenses\": 7000000,\n    \"totalDebt\": 20000000,\n    \"totalSaving\": 50000000,\n    \"financialHealthScore\": 100,\n    \"accountNonExpired\": true,\n    \"accountNonLocked\": true,\n    \"authorities\": [],\n    \"credentialsNonExpired\": true,\n    \"enabled\": true\n}"
+        }
+      ]
+    },
+    {
+      "name": "profile-by-id",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2aW5jZW50QGdtYWlsLmNvbSIsImlhdCI6MTc3NTczNjYxMSwiZXhwIjoxNzc1NzQwMjExfQ.XGakRl--6WzrBX8i8PHZABY8E9XPyQsN2Gp0YUEMmAI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/profile/d9959057-ed37-42a3-82e1-b06afac7b350",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "profile",
+            "d9959057-ed37-42a3-82e1-b06afac7b350"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "profile-by-id",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/profile/d9959057-ed37-42a3-82e1-b06afac7b350",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "profile",
+                "d9959057-ed37-42a3-82e1-b06afac7b350"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "0"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "key": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "Expires",
+              "value": "0"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 09 Apr 2026 12:11:48 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"fullName\": \"Vincent Sinatra\",\n    \"monthlyIncome\": 15000000,\n    \"monthlyExpenses\": 7000000,\n    \"totalDebt\": 20000000,\n    \"totalSaving\": 50000000,\n    \"financialHealthScore\": 100\n}"
+        }
+      ]
+    }
+  ]
+}
